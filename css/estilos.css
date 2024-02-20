@@ -1,0 +1,122 @@
+iframe{
+    width: 100%;
+}
+ 
+.caja{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3 rem;
+    text-align: center;
+    
+}
+.caja1{
+    display: inline-block;
+    text-align: center;
+    vertical-align: center;
+    padding: 1px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background-color: orange;
+    width: 480px;
+    height: 530px;
+}
+.titulo_producto{
+    width: 400px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    padding-top: 10px;
+    color: white;
+    background-color: orangered;
+    text-align: center;
+
+}
+.precio_producto{
+    text-align: center;
+    color: white;
+}
+.home{
+    background-color: green;
+    color: white;
+    border-radius: 5px;   
+}
+.imagen_producto{
+    text-align: center;
+    width: 250px;
+    height: 320px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+nav a.home{
+    background-color: #05b1b1;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+nav a.home:hover{
+    background-color: #177777;
+    color: white;
+}
+.agregar{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+.agregar:hover{
+    background-color: green;
+}
+
+
+/*laptop*/
+@media   (min-width: 768px)and(max-width:1023) { 
+    .caja{
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+        grid-template-areas: 
+        "nav"
+        "div"
+        "inframe"
+        "h2";     
+        
+
+    }
+}
+
+/*tablet*/
+@media  (min-width: 768px) and (max-width: 1023px) { 
+
+    .caja{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    grid-template-areas: 
+    "nav"
+    "div"
+    "inframe"
+    "h2";     
+    
+    }
+}
+
+/*celular*/
+@media  (max-width: 767px) {
+    
+    .caja{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+       
+    }
+}
